@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+		<nav class="nav nav_top">
+		<div class="logo">
+			<a href="index.html"><img src="pic2.jpg" width="150"></a>
+		</div>
+		<div class="nav_side">
+			<a href="about.html">About Us</a>|
+			<a href="service.html">Services</a>|
+			<a href="blog.html">Blogs</a>|
+			<a href="contact.html">Contact Us</a>|
+			<a href="login.html">Login</a>|
+			<a href="register.html">SignUp</a>
+		</div>
+	</nav>
+<div class="blog" style="padding-top: 125px;">
+	<h2>FRESHLY MYNTED
+	...only for you!</h2>
+	<div class="blog_content">
+		<p>Recreate Your Favorite Stranger Things Looks Using these Products from Myntra</p>
+	</div>
+<hr>
+	<h2>Business</h2>
+	<p>For Myntraites and our Partners, the End of Reason Sale (EORS 16) is nothing short of a festival, it’s a grand event that keeps us on our toes and gives us and our partner ecosystem the opportunity to grow every year. To celebrate the success of the last EORS and give away awards to our brand partners who performed phenomenally during the mega carnival event, we held a webinar recently.
+
+The super-interactive and insightful webinar covered the new and upcoming initiatives for brand partners and featured interviews with some of the winners of the last EORS as well. This is the Corporate blog of fashion & lifestyle company, Myntra. This features stories and news on the latest launches & developments... Home AboutInclusionCareersCultureBlogTech. This is the Corporate blog of fashion & lifestyle company, Myntra. This features stories and news on the latest launches & developments... Home AboutInclusionCareersCultureBlogTech. This is the Corporate blog of fashion & lifestyle company, Myntra. This features stories and news on the latest launches & developments... Home AboutInclusionCareersCultureBlogTech. This is the Corporate blog of fashion & lifestyle company, Myntra. This features stories and news on the latest launches & developments... Home AboutInclusionCareersCultureBlogTech.</p>
+</div>
+
+<div class="feed">
+	<h2>Write a review</h2>
+	<div class="feed_form">
+		<form name="submit-to-google-sheet" method="post">
+			<input type="text" name="Name" placeholder="Full Name" required><br>
+			<input type="email" name="Email" placeholder="Email ID" required><br>
+			<input type="number" name="Number" placeholder="Contact Number" required><br>
+			<textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+			<button type="Submit">Submit</button>
+		</form>
+	</div>
+</div>
+<hr>
+<footer>
+	<div class="logo">
+		<a href="index.html"><img src="pic2.jpg" width="150" height="90px"></a>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="pages">
+		<h3>Pages</h3>
+		<a href="about.html">About Us</a>|
+		<a href="service.html">Services</a>|
+		<a href="blog.html">Blogs</a>|
+		<a href="login.html">Login</a>|
+		<a href="register.html">Sign Up</a>
+	</div>
+	<div class="doc">
+		<h3>Documents</h3>
+		<a href="about.html">Privacy Policy</a>|
+		<a href="about.html">Terms of Use</a>|
+		<a href="about.html">Refund Policy</a>
+	</div>
+	<div class="social">
+		<h3>Follow us</h3>
+		<a href="https://www.facebook.com/myntra"  target="_blank"><i class="fa-brands fa-facebook"></i></a>|
+		<a href="https://www.linkedin.com/company/myntra/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>|
+		<a href="https://www.instagram.com/Myntra/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>|
+		<a href="https://twitter.com/myntra"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+	</div>
+	<div class="contact">
+		<h3>Contact Us</h3>
+		<a href="tel: +919032420982"><i class="fa-brands fa-whatsapp"></i></a>|
+		<a href="mailto: heyreema@gmail.com"><i class="fa-solid fa-phone"></i></a>|
+		<a href="mailto: abc@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+	</div>
+	<hr>
+	<p>Copyright &copy;2022 aradhana. All rights reserved</p>
+</footer>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxnTN1JSgXNzfsnqRLjVnhPYLf-gB2kZVbwcjXWbcG9yU7JwLdbuYLD8i-QMshUs_Ft/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
